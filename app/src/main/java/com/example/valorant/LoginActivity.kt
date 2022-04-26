@@ -64,8 +64,8 @@ class LoginActivity : AppCompatActivity() {
 
     private fun validateData() {
         // get data
-        email = binding.emailTextField.editText.toString().trim()
-        password = binding.passwordTextField.editText.toString().trim()
+        email = binding.emailTextField.editText?.text.toString().trim()
+        password = binding.passwordTextField.editText?.text.toString().trim()
 
         // validate fata
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
