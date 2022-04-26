@@ -7,30 +7,30 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".ProfileActivity" >
+    tools:context=".ProfileActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:gravity="center"
         tools:layout_editor_absoluteY="20dp">
 
         <TextView
             android:id="@+id/login_as_text"
+            style="@style/TextAppearance.MaterialComponents.Caption"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="You are logged in as"
-            style="@style/TextAppearance.MaterialComponents.Caption"/>
+            android:text="You are logged in as" />
 
         <TextView
             android:id="@+id/email_text"
+            style="@style/TextAppearance.AppCompat.Body1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email"
-            style="@style/TextAppearance.AppCompat.Body1"/>
+            android:text="Email" />
 
         <Button
             android:id="@+id/logout_button"

@@ -50,7 +50,7 @@ class SignUpActivity : AppCompatActivity() {
 
     private fun validateData() {
         email = binding.emailTextField.editText?.text.toString().trim()
-        Log.d("email",email)
+        Log.d("email", email)
         password = binding.passwordTextField.editText?.text.toString().trim()
 
         // validate data
